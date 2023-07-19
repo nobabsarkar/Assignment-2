@@ -1,5 +1,8 @@
 /* header starts */
-
+.hello {
+  background-image: linear-gradient(red, yellow);
+  padding: 5px;
+}
 header {
   width: 1000px;
   margin: auto;
@@ -60,7 +63,6 @@ header > nav > ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0px 200px; */
   width: 1000px;
 }
 .banner-content {
@@ -125,6 +127,202 @@ header > nav > ul li a {
 }
 /* gamer section ends */
 
+/* online game section starts  */
+.online-game {
+  width: 1000px;
+  margin: 50px auto;
+}
+.online-game-content {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.online-game-content h1 {
+  font-size: 30px;
+}
+.online-games {
+  color: #0b0223;
+}
+.funny-video {
+  color: #8758f1;
+}
+.online-game-image img {
+  width: 230px;
+}
+.online-game-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.image-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.image-icon i {
+  position: absolute;
+  top: -224px;
+  left: 311%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+/* online game section ends  */
+
+/* play game anytime section starts */
+.play-game-anytime {
+  width: 1000px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.play-game-image {
+  width: 400px;
+  position: relative;
+}
+.play-game-image img {
+  width: 100%;
+}
+.play-game-content {
+  width: 400px;
+}
+.child-image img {
+  position: absolute;
+  width: 150px;
+  left: 343px;
+  top: 252px;
+}
+.play-games-online {
+  color: #8758f1;
+}
+.play-game-content h1 {
+  font-size: 35px;
+}
+/* play game anytime section ends */
+
+/* image section starts  */
+.image-section {
+  width: 800px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+}
+.image-content {
+  border-radius: 40px;
+  padding: 5px 11px;
+  cursor: pointer;
+}
+.image-content:hover {
+  border: 1px solid gray;
+}
+.image-content {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.image-content img {
+  width: 30px;
+}
+/* image section ends  */
+
+/* footer section starts  */
+footer {
+  width: 1000px;
+  margin: auto;
+  background-color: #0b0223;
+  padding: 20px 0;
+}
+.footer {
+  width: 700px;
+  margin: 30px auto;
+}
+.gamer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.gamer-logo img {
+  margin-right: 15px;
+}
+
+.all-footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-left ul {
+  display: flex;
+  align-items: center;
+}
+.footer-left ul li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.footer-left ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-right ul {
+  display: flex;
+  align-items: center;
+}
+.footer-right ul li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.footer-right ul li a {
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.icon i {
+  color: white;
+  font-size: 31px;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.terms-and-condition {
+  width: 700px;
+}
+.terms-and-condition ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.terms-and-condition ul li {
+  list-style-type: none;
+}
+.terms-and-condition ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom ul li {
+  list-style: none;
+  color: white;
+}
+/* footer section ends  */
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   nav {
@@ -145,5 +343,34 @@ header > nav > ul li a {
   }
   .gamer {
     flex-direction: column;
+  }
+  .online-game-image {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .play-game-anytime {
+    flex-direction: column-reverse;
+  }
+  .play-game-content {
+    margin-bottom: 20px;
+  }
+  .all-footer-list {
+    flex-direction: column;
+  }
+  .terms-and-condition ul {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .footer-bottom ul {
+    flex-direction: column;
+  }
+}
+
+/* responsive tablet device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .online-game-image {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
   }
 }
